@@ -1,27 +1,13 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Mon Premier Site</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-
-
-<body>
-
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-
-
-
-<body>
-{% load static %}
-
-<img src="giphy (1).gif" alt="">
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ page.title }}</h1>
+<p>
+    Bonjour, je m'appelle léo. Je suis en formation "Découverte
+    Métier IA" chez Simplon Bordeaux, où j'apprends les bases du
+    développement web : HTML, CSS, Python, et des outils comme Git et
+    Wagtail.
+</p>
+<p>
+    Je me suis lancée dans cette formation parce que j'aimerai etre a l'aise sur les base du code pour creer mon jeux video par la suite avec plus de pratique.
+</p>
+{% endblock content %}
